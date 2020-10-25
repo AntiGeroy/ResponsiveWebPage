@@ -1,0 +1,167 @@
+body {
+	margin: auto;
+	width: 90%
+}
+
+
+header {
+	background-image: url("pics/star-wars-backgrounds-37.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 200px; 	
+	text-align: center;
+	border-radius: 60px
+}
+
+header h2 {
+	padding: 80px;
+}
+
+aside {
+	background-color: #ebedf0;
+	border-radius: 30px;
+	height: 100%;
+	width: 20%;
+	min-width: 200px;
+}
+
+aside li {
+	list-style-type: none;
+	height: 30px;
+	margin: 40px 0 40px 0;
+}
+
+
+a:link {
+  text-decoration: none;
+}
+
+main {
+	width: 80%;
+}
+
+footer {
+	margin: auto;
+	height: 50px;
+	background-color: gray;
+	border-radius: 60px;
+	text-align: center;
+}
+
+.flexbox {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	height: 800px;
+	margin: 20px 0 20px 0;
+}
+
+
+
+.imagesFlexboxWrapper{
+	background-color: #ebedf0;
+	border-radius: 30px;
+	height: 100%;
+	margin-left: 30px;
+}
+
+.imagesFlexbox{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	height: 90%;
+	width: 90%;
+	margin: auto;
+	padding-top: 20px;
+}
+
+.image{
+	width: 200px;
+	height: 150px;
+	border: 1px solid black;
+}
+
+.fullImageWrapper{
+	margin-left: 30px;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+	background-color: #ebedf0;
+	border-radius: 30px;
+	height: 100%;
+}
+
+.fullImage{
+  	width: 90%;
+  	height: 90%;
+}
+
+.formWrapper{
+	background-color: #ebedf0;
+	border-radius: 5px;
+	height: 100%;
+	margin-left: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+form{
+	width: 50%;
+	margin: auto;
+}
+
+input[type=text], input[type=email]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  color: black;
+  background-color: #b2ebde;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 800px) {
+	.flexbox{
+		flex-flow: column;
+		height: auto;
+	}
+
+	aside{
+		width: 100%;
+	}
+
+	main{
+		margin-top: 30px;
+		margin-left: 0;
+		width: 100%;
+	}
+
+	.imagesFlexboxWrapper{
+		margin-left: 0;
+	}
+
+	.fullImageWrapper{
+		margin-left:0;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.formWrapper{
+		margin-left: 0;
+	}
+
+} 
